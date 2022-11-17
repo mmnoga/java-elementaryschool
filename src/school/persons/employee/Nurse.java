@@ -5,13 +5,12 @@ import school.helpers.Address;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-public class Headmaster extends Employee implements Hired {
-
-    public Headmaster(String name, String surname, String gender, LocalDate birthDate, Address address, String phone, float salary, String employmentType) {
+public class Nurse extends Employee implements Hired{
+    public Nurse(String name, String surname, String gender, LocalDate birthDate, Address address, String phone, String employmentType) {
         super(name, surname, gender, birthDate, address, phone, employmentType);
     }
 
     public BigDecimal getSalary() {
-        return this.salary;
+        return this.salary.divide(BigDecimal.valueOf(2));
     }
 }

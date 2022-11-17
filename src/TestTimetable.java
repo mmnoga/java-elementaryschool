@@ -12,7 +12,7 @@ public class TestTimetable {
     public static void main(String[] args) {
         ArrayList<Teacher> teachers = new ArrayList<Teacher>();
         Address address = new Address("11-222", "Kraków", "Basztowa", "14A");
-        teachers.add(new Teacher("John", "Smith", "male", LocalDate.of(1966, 3, 16), address, "12 332 11 22", 5400, "contract of employment", "biology"));
+        teachers.add(new Teacher("John", "Smith", "male", LocalDate.of(1966, 3, 16), address, "12 332 11 22", "contract of employment", "biology"));
 
         System.out.println(teachers.get(0).toString());
 

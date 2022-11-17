@@ -8,7 +8,7 @@ import java.time.LocalDate;
 public class Teacher extends Employee implements Hired {
     String subject;
 
-    public Teacher(String name, String surname, String gender, LocalDate birthDate, Address address, String phone, float salary, String employmentType, String subject) {
+    public Teacher(String name, String surname, String gender, LocalDate birthDate, Address address, String phone, String employmentType, String subject) {
         super(name, surname, gender, birthDate, address, phone, employmentType);
 
         this.subject = subject;
